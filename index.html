@@ -1,0 +1,550 @@
+ 
+     
+       <!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width,initial-scale=1">
+    
+        
+<title>Quantum K complet</title>
+  
+<style>
+
+body{
+    margin:0;
+    overflow:hidden;
+    background:white;
+    font-family:Arial,sans-serif;
+}
+
+
+
+/* SPHERE */
+
+
+#sphere{
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100vw;
+    height:100vh;
+
+    overflow:hidden;
+}
+ 
+
+
+.sphereItem{
+    position:absolute;
+    left:50%;
+    transform:translate(-50%,-50%);
+    white-space:nowrap;
+
+}
+
+
+#openTime {
+   
+ position: fixed;
+    bottom: 2px;
+    right: 5px;
+    font-size: 4px;
+    color: white;
+    opacity: 0.7;
+
+}
+
+</style>
+</head>
+
+<body>
+
+
+<div id="sphere"></div>
+
+  
+<script>
+
+// ======================================
+// DATA
+// ======================================
+ const numbers = ["Quantum K","Chapter 12","Physical Healing","Compare the perfect blueprint for our physical body contained","in our Soul Star Chakra against the cells","of our current physical body.","Produce missing cells identified during this comparison by applying the harmonic","of 264 to pure light energy drawn from the Zero Point Field,","via the Earth’s electromagnetic energy grid, recognising the equations and harmonics:","M = c + √1/c","E = (c + √1/C ) c²","E = mc²","E = √((2c + √1/2c)(2c)²)","972 The harmonics of time (97200 grid seconds in one earth day)","324 Earth resonant harmonic","648 (324 x 2) Harmonic temperature scale","(βmc² + ∑ₖ₌₁³ αₖ pₖ c) ψ(x,t) = iℏ ∂ψ/∂t (x,t)","In this Dirac equation for quantum energy flow,","m is the rest mass of the electron,","c is the speed of light,","p is the momentum operator,","ℏ is the reduced Planck’s constant","and x and t are the space and time coordinates","Where new cells are required,","use the birth unzipping angle of the DNA / RNA of 7 degrees 20 mins short of 360 degrees.","Having healed the physical body in this way,","heal also the light body at all times, levels and dimensions.","Repeat this process and identify extra cells","and rogue cells that do not comply with our perfect blueprint,","ensuring that extra cells no longer replicate","and all future cellular replication from rogue cells follows","the blueprint rather than the existing tarnished or diseased pattern.","Crystal: Sodalite Herb: Thyme Flower: White Orchid","Master number 4","Number 7 3 2 1 0 6 3 9 1 2 7 8","Gateway4 1 1 1 1 1 0 0 0 1 0 0 0","Preparation for detoxification","Identify and prioritise the 10 most important obstacles to good health.","Pass this information to the internal reasoning centres within every cell.","Build the energetic pathways required to facilitate utilisation of homoeopathy,","flower essences, herbs, supplements and all other vibrational energy tools.","Fibonacci Sequence F(n+2) = F (n+1) + F(n) -∞ ↔ +∞  3 dimensions Green","C, E,F Major Octaves C1 and C3. Starting (n) = 5 and (n+1) = 8","Crystal:Fire Opal Plant:Jasmine","Master number 7","Number 6 4 2 4 7 3 8 5 3 9 5 5","Gateway3 0 1 1 0 0 0 1 1 1 0 0 0","Enhance all energetic and metabolic pathways to provide more leverage and","resiliency, replacing any neural pathways damaged by trauma,toxins or disease.","In preparation for detoxification, balance all pathways to drainage, including","colon flora, spleen, liver, lymph, gall bladder and kidneys.","Maintain these pathways during the detoxification process.","Fibonacci Sequence: F(n+2) = F (n+1) + F(n) -∞ ↔ +∞  3 dimensions Blue","C, F,G Major Octaves C3 and C6. Starting (n) = 3 and (n+1) = 5","Crystal:Rainbow Quartz Plant:Nettle","Master number 9","Number 6 7 1 3 6 9 4 6 3 9 6 3","Gateway6 1 1 0 0 0 1 1 0 1 1 1 0","Uncloak stealth adapted viruses, parasites and other toxins","by converting rigid signals to alert signals.","Increase production of glutathione by absorbing the vibration of carduus","marianus, the seed of milk thistle. Use these extra glutathione levels to bond to","and excrete all heavy metals in the body.","Fibonacci Sequence: F(n+2) = F (n+1) + F(n) -∞ ↔ +∞  3 dimensions White","B,D,G Major Octaves C5 and C6. Starting (n) = 2 and (n+1) = 4","Rehydrate cells and maintain optimum intra/extra cellular fluid levels.","All fluid consumed and already in the cells to have a negative electrical","potential of minus 238 millivolts and the properties of water","approaching + 4 degrees centigrade. Vibrate with the energy of universal intelligence.","Crystal: Generator shaped Petalite  Plant: Rose","Master number 4","Number 6 9 9 2 2 8 7 8 9 8 8 9","Gateway4 1 1 0 1 0 0 0 0 0 0 0 0","Immune Function","Increase immune function to 100%.","Fibonacci Sequence: F(n+2) = F (n+1) + F(n) -∞ ↔ +∞  3 dimensions Blue","C,E,G Major Octaves C4 and C5. Starting (n) = 6 and (n+1) = 9","Psychoneuroimmunological connection between the brain, DNA and immune system","using endorphins and other neurotransmitters","to be restricted to immune  raising feedback only.","Thymus and other immune functions to differentiate between own cells and","external toxins from the blueprint held in the morphogenetic field.","Detoxification","When the drainage pathways are clear,","all toxins are to be excreted from the body, including parasites, heavy metals,","chemical residues, pathogenic bacteria and viruses.","Select a timescale that ensures there are no noticeable","detoxification symptoms or other negative reactions from this process.","Fibonacci Sequence: F(n+2) = F (n+1) + F(n) -∞ ↔ +∞  3 dimensions Green","B,D,G Major Octaves C4 and C6. Starting (n) = 4 and (n+1) = 10","Order of detoxification to allow for any protective effect that parasites and candida","may be offering against more damaging toxins, for example:","As a physical barrier between the cells and heavy metals","As a sponge to temporarily soak up other toxins","As a breathing support so that cells may exchange gases","and avoid the asphyxiating effects of heavy metals and chemicals.","In the absence of any other considerations,","heavy metals and chemical residues are to be removed before parasites,","candida, bacteria and viruses.","Fibonacci Sequence: F(n+2) = F (n+1) + F(n) -∞ ↔ +∞  3 dimensions Yellow","B,F Major Octaves C3 and C10. Starting (n) = 7 and (n+1) = 8","Remove residues and negative effects of medicines, recreational drugs","and nutritional supplements, including any blockages they may create","to the existence and generation of energetic pathways.","Fibonacci Sequence: F(n+2) = F (n+1) + F(n) -∞ ↔ +∞  3 dimensions Blue","B,D and G Major, Starting (n) = 2 and (n+1) = 4","Remove fungus in its mycelial form:","Fibonacci Sequence: F(n+2) = F (n+1) + F(n) -∞ ↔ +∞  3 dimensions Green","B,D,G Major. Starting (n) = 2 and (n+1) = 3","Remove the bacteria, virus and any other toxic residues left from vaccination,","immunisation and any other injections. Remove these toxins from any areas affected,","including the brain, cerebellum, brain-stem, cerebrospinal fluid,","liver,kidneys, intestines, ovaries, testes and prostate.","Fibonacci Sequence: F(n+2) = F (n+1) + F(n)   -∞ ↔ +∞  3 dimensions  Yellow","B,F,G Major Octaves C3 and C5. Starting (n) = 6 and (n+1) = 10","To delete pathogenic bacteria, viruses, parasites, gangrene, metals released","from amalgam fillings, pollution, vaccine residues and all emotional","and physical trauma from the gums, dental tubules, tonsils, root canals, sites of","tooth extractions, the jaw bone and any metastases:","Fibonacci Sequence: F(n+2) = F (n+1) + F(n)  -∞ ↔ +∞  3 dimensions","Yellow B,F Major. Starting (n) = 2 and (n+1) =3","Crystal: Pietersite Plant: Ginkgo","Master number 8","Number 1 2 5 7 7 9 2 6 7 4 8 4","Gateway4 3 0 0 1 0 3 0 1 0 1 0 3","Eliminate excessive fluid retention from in between the cells","of the body tissues and remove trapped blood plasma proteins.","Crystal: Rose quartz Plant: Nettle","Master number 5","Number 5 4 2 6 3 4 1 4 7 8 7 8","Gateway2 0 3 0 0 3 3 3 0 0 3 0 1","Brain and nervous system","Restore natural cranial resonance to Universal resonance,","(between 840 and 890 megacycles per second) ignoring all interference,","including that from electromagnetic stress and negative belief systems.","Fibonacci Sequence: F(n+2) = F (n+1) + F(n)  -∞ ↔ +∞  3 dimensions Yellow","B,E,G Major Octaves C6,7 and 10. Starting (n) = 1 and (n+1) = 2","Crystal: Amber Plant: Passiflora","Master Number 9","Number 2 3 7 8 3 5 7 8 3 3 5 9","Gateway1 1 1 1 1 0 0 0 0 1 1 1 0","Restore full nervous system function and cancel neurasthenia (nervous exhaustion).","Crystal: Fluorite Plant: Basil","Master number 9","Number 2 3 4 5 2 4 4 6 7 9 5 3","Gateway5 0 1 1 1 1 1 0 0 1 1 0 1","Delete any stress receptors activated on the brain or nervous system,","restoring full function of any cells where stress receptors have been de-activated.","Include the following:","Myelin sheath, Meninges, Limbic-emotional nervous system ,","Cranial nerves, Central nervous system","Dopamine tissue, Sympathetic nervous system,","Amygdala, Peripheral nervous system,  Glenliol neurons","Parasympathetic nervous system,  Dendrites,","Autonomic nervous system, Striatum, Co-ordination centres,","Basal ganglia, Perception centres,  Cerebral cortex, Brain Stem,","Corpus callosum, Cerebrospinal fluid, Striatum","Crystal: Transmitter shaped blue beryl Plant: Rue","Master number 6","Number 3 3 6 6 9 9 8 6 2 6 7 4","Gateway7 0 1 0 0 0 1 1 0 1 1 0 0","Fibonacci Sequence: F(n+2) = F (n+1) + F(n)  -∞ ↔ +∞  3 dimensions Blue","B,D,G Major Octave C3. Starting (n) = 1 and (n+1) = 5","Ensure appropriate balance between the left and right brain hemispheres.","For symptoms of chronic fatigue or similar, restore grey matter to optimum levels","and heal any neurotransmitters that are creating","excessive sensations of pain and fatigue.","Also, heal all faulty gene expression within the white blood cells.","Fibonacci Sequence: F(n+2) = F (n+1) + F(n)  -∞ ↔ +∞  3 dimensions Yellow","B,D,E Major Octave C7. Starting (n) = 1 and (n+1) = 2","Post detoxification healing","Release putrefactive and post-putrefactive matter","from the bowels along with excessive mucous,","mucoid plaque and gluten residues,","maintaining optimum levels of healthy bowel bacteria.","Assess all emotional connections to the bowel and heal any imbalances found.","Fibonacci Sequence: F(n+2) = F (n+1) + F(n)  -∞ ↔ +∞  3 dimensions Blue","B,D,G Major Octaves C3 and C4. Starting (n) = 2 and (n+1) = 3","Heal ‘leaky gut’ i.e. excessive permeability in the colon and small intestine","Fibonacci Sequence: F(n+2) = F (n+1) + F(n)  -∞ ↔ +∞ 3 dimensions  White","B,E,G Major Octaves C2 and C6. Starting (n) = 3 and (n+1) = 4","Brownian motion","Using co-ordinated Brownian motion  (i.e. by controlling the normally random","bombardment of cells by molecules and atoms) perform the following actions:","1. Direct T-Cells from the Thymus straight to the site of any infection.","2. Send releasing hormones from the hypothalamus directly","to the pituitary to improve internal hormonal feedback.","3. Direct all internal hormones to their targeted gland,","removing any toxins blocking the receptor sites.","4. Encourage the efficient removal of cellular waste","and debris from the lymphatic fluid into the bloodstream.","5. Move any misaligned bones or vertebrae back to their optimum position.","6.Detach arterial plaque from the artery lining molecule by molecule to facilitate","safe excretion from the body. Restore optimum","blood pressure and cholesterol levels.","7. Perturb the jaw bone where needed to stimulate a cellular","change from osteocytes to osteoblasts,","aiding new bone formation to heal Neuralgia Inducing Cavitation Osteonecrosis.","8. Detach mucoid plaque from all affected sites in the body","at a safe and appropriate pace.","9. Clear blockages in the pores to help perfect skin health,","appearance and efficiency as an excretory mechanism.","10. Perturb the internal bone structures to maintain optimum balance","between osteocytes and osteoblasts and thereby protect bone strength and density.","11. Perturb the surface of any stones or sediment in the gall bladder or kidneys","to disrupt its structure and facilitate safe excretion from the body.","Fibonacci Sequence: F(n+2) = F (n+1) + F(n)  -∞ ↔ +∞  3 dimensions","Green B,C,E Major Octave C4. Starting (n) = 2 and (n+1) = 3","Allergies and sensitivities","Remove food sensitivities and allergic reactions:","Fibonacci Sequence: F(n+2) = F (n+1) + F(n)  3 dimensions Yellow","B Major Starting (n) = 2 and (n+1) = 3","Crystal: Pineapple Amethyst Plant: Fennel","Master number 9","Number 4 6 7 8 5 2 7 3 6 4 6 5","Gateway6 1 1 0 0 1 0 1 0 1 0 1 1","Remove allergic reactions to all inhalant","and contact substances, including tobacco fumes, pollution,","exhaust fumes, grass pollen, tree pollen, chemicals,","cosmetics and household cleaning products:","Fibonacci Sequence: F(n+2) = F (n+1) + F(n) 3 dimensions White","C Major, Starting (n) = 5 and (n+1) = 6","Crystal: Flourite Plant: Ginger","Master number 7","Number 3 4 6 7 7 8 9 7 4 2 6 7","Gateway4 0 1 1 0 0 1 1 0 1 1 1 0","Desensitise the body to the candida toxin acetaldehyde:","Fibonacci Sequence: F(n+2) = F (n+1) + F(n)  -∞ ↔ +∞  3 dimensions White","C,D,G Major Octaves C5 and C6. Starting (n) = 2 and (n+1) = 4","Increase tolerance levels of all foods and inhalants to the maximum","level possible whilst still encouraging appropriate dietary rotation and maintaining","necessary protection against toxic side-effects.","Desensitise all cells in the body to inflammatory chemicals, including histamine,","where the cells are either over-sensitive or where the chemical","production is excessive.","In particular, protect the skin, lungs and sinuses from this over-reaction.","Crystal: Blue Pectolite Plant: Wild Thyme","Master Number 8","Number 3 8 6 2 8 5 2 2 2 7 3 5","Gateway6 1 0 0 0 1 1 1 0 1 0 1 1","Future vaccination","Vaccinate against Avian Flu H5N1 and any other type of influenza","or contagious virus by producing anti-bodies to that particular strain when needed.","Crystal: Iolite Plant: Rauwolfia","Master number 11","Number 2 3 4 5 9 2 3 7 3 4 7 7","Gateway4 1 1 0 0 1 1 0 1 1 0 1 0","General structure","Restore and repair all directional plates in the joints of the body.","Fibonacci Sequence: F(n+2) = F (n+1) + F(n)  -∞ ↔ +∞ 3 dimensions Green","C,D,F,G Major Octaves C3 and C4. Starting (n) = 4 and (n+1) = 5","Restore ileo-caecal and houston valves to 100% competency","and delete all stress receptors activated on them.","Crystal: Idocrase Plant: Gentian","Master number 8","Number 3 5 1 5 8 4 2 4 9 7 2 3","Gateway7 1 0 1 1 0 1 1 1 1 1 1 0","Reset shock absorbers","Remove all stored memory of shock, trauma or impact from the tailbone.","Replace the tailbone in its proper position and restore","proper movement of bone marrow.","Crystal: Topaz Plant: Artemisia","Master number 1","Number 6 8 7 9 5 5 8 9 8 9 9 8","Gateway4 0 0 0 1 0 1 0 0 0 1 1 0","Repair all fixations and subluxations of the vertebrae,","restoring balance from cranium","through to coccyx.In particular, remove chemical, environmental,","emotional and physical imbalances","from the CT junction C7/T1 (and its links to the jaw muscles),","T1/T2, L4/L5, L5/S1 and the TL junction T12/L1.","While assessing the vertebrae, correct any scoliosis, lordosis,","kyphosis and dural torque.","Fibonacci Sequence: F(n+2) = F (n+1) + F(n)  -∞ ↔ +∞ 3 dimensions White","C,D Major Octaves C3 to C8. Starting (n) = 0 and (n+1) = 1","Crystal: Emerald Plant: Ginkgo","Master number 11","Number 1 7 6 1 5 9 3 5 9 6 6 7","Gateway3 0 1 0 1 1 1 1 0 1 0 1 0","Correct all structural misalignments where the body has moved away","from its perfect blueprint fixing the imbalances at all dimensions and energetic levels.","Fibonacci Sequence: F(n+2) = F (n+1) + F(n)  -∞ ↔ +∞ 3 dimensions Red","B,D,G Major Octaves C2 and C7. 14 seconds. Starting (n) = 2 and (n+1) = 4","Crystal: Rainbow Obsidian Plant: Passiflora","Master number 11","Number 4 3 7 9 6 5 4 3 0 2 7 6","Gateway1 1 1 0 0 0 1 1 0 1 1 0 0","Delete all stress receptors and stress memory","throughout the body, including the acute response to recent trauma.","Delete the stress receptors","from the sensory energy function i.e. sight, hearing, touch, taste, smell and perception.","Restore cells affected to optimum function. In particular, assess:","Liver  Heart  Ears  Small  Intestine  Kidneys  Stomach  Tongue  Pancreas  Bladder","Ligaments  Jaw  Joints  Gall Bladder  Eyes  Gonads  Hyoid  Lungs","Tissue  Brain   Pelvis  Colon  Spleen  Lymph  Blood","Electromagnetic imbalances","Build an organic sheath around high voltage/amperage in any part of the body","where it must be isolated away from bio-electromagnetic energy at","low voltage and low amperage.","All cells to ignore electrical signals that exceed the body’s natural voltage/amperage","and repair any internal circuits so damaged.","Julia Set : 5 Iterated 52 + C -∞ ↔ +∞  3 dimensions Green","B,E,F Major. Octaves C7, C8 and C10.","Crystal: Iron Pyrites Plant: Chamomile","Master number 11","Number 3 4 5 7 9 1 2 5 7 8 3 2","Gateway2 1 0 0 0 0 1 1 1 0 1 0 1","Block HAARP and any other electromagnetic waves that interfere","with the pineal gland and the body’s natural vibrational field.","Julia Set: 6 iterated 62 + C -∞ ↔ +∞  3 dimensions White","A,B,G Major Octave C6.","Isolate the physical and energetic body at all levels and dimensions","from the negative influences of man-made electromagnetic energy of any type.","Crystal: Topaz Plant: Pepper","Master number 9","Number 9 9 5 1 2 4 5 7 8 6 4 3","Gateway3 1 1 1 1 0 1 1 1 0 0 1 1","Assess the energy flow through the circadian rhythm of the jaw generated","through all the tooth pegs,","checking the teeth individually and in conjunction with all neighbours,","during bite and at rest.","Include any stress from impacted wisdom teeth and dead teeth.","During this assessment, look for any negative vibrations and electromagnetic","impulses being generated either outside the normal predominance time for","that meridian or at a","voltage/amperage above normal parameters.","If inappropriate impulses are identified, ignore them when they are triggered","and ensure they do not stimulate any organs or bodily systems","connected to that meridian.","Crystal: Fire Opal Plant: Hawthorn","Master number 11","Number 5 4 7 6 7 9 3 8 3 2 8 3","Gateway7 1 0 1 1 1 0 1 0 1 0 0 0","Past physical traumas","Release any manifestation of brain damage or other disability resulting from","the suggestion of this as a possibility by anyone, including family members","and the medical establishment. Assess all time periods, but","pay particular attention to pregnancy and the birth process.","Crystal: Obsidian Plant: Peppermint","Master number 7","Number 8 7 6 5 9 6 2 3 8 5 5 6","Gateway 6 2 1 0 0 2 1 0 0 1 2 1 0","Restore correct energy flow through meridians and all other lines affected by tattoos,","body piercings or studs of any type.","Absorb the energy of Tibetan 8’s over the affected site to encourage","the free flow of energy.","Remove all residual trauma resulting from any invasive procedures","Julia Set: 3 iterated 32 +C -∞ ↔ +∞ 3 dimensions White B,C,G Major","Octave C6 and C8","Crystal: Carnelian Plant: Rose","Master number 3","Number 6 7 5 6 4 9 4 3 4 8 3 7","Gateway5 7 0 0 0 0 0 0 0 0 0 0 7","Restore full ribosome activity to repair cells damaged by trauma and disease,","rebuilding all cells affected including tissues, joints,","ligaments, tendons, skin,organs, muscles and bone.","Crystal: Grossularite Plant: Calendula","Master number 1","Number 9 8 5 2 4 7 3 5 8 1 9 3","Gateway4 0 1 0 1 0 0 0 0 0 1 0 1","Delete the cellular memory of any trauma, stress","or injury from all dimensions of the body, physical and etheric.","Fibonacci Sequence: F(n+2) = F (n+1) + F(n)  -∞ ↔ +∞ 3 dimensions Blue","B,G Major Octave C4,7. Starting (n) = 2 and (n+1) = 7","Crystal: Hawk’s Eye Plant: Laurel","Master number 7","Number 3 6 8 1 5 8 4 5 9 3 8 1","Gateway3 0 1 0 0 1 0 1 0 1 0 1 1","Restore correct energy flow through meridians and all other lines","affected by operations, accidents, scars, injuries and all trauma of any type.","Absorb the energy of Tibetan 8’s over the affected site to encourage the free flow of energy.","Endocrine","Delete all toxins blocking the receptor sites of any of the endocrine glands,","restoring optimal internal communication.","Fibonacci Sequence: F(n+2) = F (n+1) + F(n)  -∞ ↔ +∞  3 dimensions Red","B,C,E Major Octaves C5 and C8. Starting (n) = 2 and (n+1) = 4","Return the adrenal glands to optimum capacity and balance.","Fibonacci Sequence: F(n+2) = F (n+1) + F(n)  -∞ ↔ +∞ 3 dimensions Yellow","B,C,E Major Octave C3. Starting (n) = 1 and (n+1) = 3","Crystal: Garnet Plant: Cardemom","Master Number 5","Number 3 3 4 5 3 4 7 5 6 5 7 7","Gateway2 1 1 1 1 0 0 0 0 0 0 0 0","Delete all stress receptors active within the endocrine system,","restoring all cells of the glands affected to optimum function.Include:","Pineal  Adrenals Pituitary  Pancreas  Hypothalamus   Ovaries","Thyroid  Uterus  Parathyroid","Mammary glands  Corpus luteum   Testes  Thymus   Prostate","Crystal: Sunstone Plant: Coriander","Master number 1","Number 3 4 7 6 1 5 5 8 7 8 3 7","Gateway3 0 1 0 0 1 1 1 1 1 0 1 0","Remove excess free radicals resulting from emotional stress,","fat consumption, drugs, pollutants, smoking, chemicals","pesticides, herbicides, allergic reactions","and excessive exercise. Remove all oxidative stress resulting","from hyperthyroidism and thyroxin production,","including that taken by medication.","Fibonacci Sequence: F(n+2) = F (n+1) + F(n)  -∞ ↔ +∞  3 dimensions Yellow","B,E,G Major Octaves C3, C7 and C10. Starting (n) = 1 and (n+1) = 3","Cranium and jaw function","Cancel stress receptors on the jaw and","the circadian rhythm of the jaw. Restore optimum bite and occlusion.","Ensure sockets in the jaw have a natural negative charge,","through which they conduct the circadian rhythm.","Restore optimum function of the cranial rhythmatic impulse.","Delete stress receptors on the tempero-mandibular joint","relative to the cranial rhythmatic impulse.","Crystal: Smoky Quartz Plant: Melissa","Master number 8","Number 7 6 7 7 9 6 7 9 3 4 7 8","Gateway4 0 0 0 0 1 1 1 0 1 1 1 1","Restore natural movement of the cranial plates.","Crystal: Iolite Plant: Cardus","Master number 3","Number 3 7 9 1 5 4 8 3 2 1 5 9","Gateway3 0 0 1 1 1 1 0 1 0 0 0 1","Cells, genetics and D.N.A","Restore DNA helixes to their highest potential.","Fibonacci Sequence: F(n+2) = F (n+1) + F(n)  -∞ ↔ +∞ 3 dimensions  Blue","B,F,G Major Octaves C2,3,4,5 and 6. Starting (n) = 1 and (n+1) = 2","Crystal: Emerald Plant: Sandalwood","Master number 11","Number 2 4 5 6 7 9 2 3 4 6 8 9","Gateway8 1 1 1 1 0 1 0 1 1 1 0 0","Support the internal DNA structure.","Fibonacci Sequence: F(n+2) = F (n+1) + F(n)  -∞ ↔ +∞  3 dimensions Yellow","B,G Major Octaves C2-6. Starting (n) = 2 and (n+1) = 3","Crystal: Fluorite Plant: Malva","Master number 3","Number 3 6 7 5 7 6 7 8 9 4 5 8","Gateway6 1 1 0 0 1 1 0 0 0 1 0 1","DNA replication to follow deterministic laws","and occur at the perfect unzipping","angle of 7 degrees 20 minutes of arc short of 360 degrees,","leaving behind any mutations caused by genetics, toxins,","emotional or physical trauma,","electromagnetic stress, radiation or any other cause.","Crystal: Unakite Plant: Myrrh","Master number 9","Number 7 2 1 9 2 4 7 2 9 1 1 9","Gateway5 1 1 0 1 0 0 1 1 0 0 1 1","To create vibrational harmony within all atoms of the body across all dimensions.","Crystal: Howlite Plant: Damiana","Master number 3","Number 5 7 7 7 3 0 6 1 9 4 3 5","Gateway3 0 0 0 0 0 0 1 1 1 0 0 0","Identify any epigenome activity, i.e. any biochemical reactions","that are turning genes on and off without altering the DNA strands.","Where needed, open the Chromatin (the combination of DNA and proteins in the cell)","so that silenced genes can re-establish connection and expression with the DNA.","If there are cancerous cells present in the body, cancel any epigenetic","silencing of gene expression and reactivate the genes that","control abnormal cell proliferation.","Crystal: Stillbite Plant: Lavender","Master number 5","Number 3 6 7 9 6 3 1 4 2 9 2 7","Gateway0 1 1 0 0 0 0 0 1 0 0 1 1","Look for similar epigenome imbalances that may have been inherited","from previous generations through environmental and emotional stresses.","Cancel these taints so that gene expression can follow the perfect blueprint.","Crystal: Topaz Plant: Nettle","Master number 1","Number 7 4 5 6 3 2 5 6 6 9 7 4","Gateway2 1 0 1 1 0 0 0 1 1 1 0 0","Identify any DNA mutations, inherited or otherwise, and delete them","by returning DNA replication","to the perfect blueprint stored in Universal Intelligence.","Fibonacci Sequence: F(n+2) = F (n+1) + F(n)  -∞ ↔ +∞ 3 dimensions Green","D,E,G Major Octave C6. Starting (n) = 1 and (n+1) = 2","Crystal: Quartzite Plant: Ginger","Master number 1","Number 2 7 9 3 5 8 1 2 4 3 5 6","Gateway3 1 0 0 0 0 1 0 0 0 1 0 1","Using the process of RNA (ribonucleic acid) interference,","RNA molecules to destroy all messages from the DNA to the ribosomes","that could be translated into faulty proteins","i.e. proteins that do not conform to our perfect blueprint.","Fibonacci Sequence: F(n+2) = F (n+1) + F(n)  -∞ ↔ +∞ 3 dimensions Red","C and G Major Octave C9. Starting (n) = 2 and (n+1) = 3","Crystal: Sulphur Plant: Gumplant","Master number 6","Number 3 8 9 1 4 2 7 8 3 4 5 6","Gateway3 1 0 0 1 1 1 1 1 1 0 0 0","Use the RNA interference process to stop the replication","of any organism foreign to the body, such as viruses, parasites and bacteria.","Fibonacci Sequence: F(n+2) = F (n+1) + F(n)  -∞ ↔ +∞ 3 dimensions Orange","B,E and G Major Octaves C7 and C10. Starting (n) = 1 and (n+1) =2","Apply appropriate energy to the crystalline lattice that controls","the magnetic imprint of the DNA to correct any imbalances found","and move the DNA towards its optimal potential.","Crystal: Fire Opal Plant: Anise","Master number 8","Number 3 8 9 3 7 6 7 5 9 1 8 5","Gateway4 1 1 1 1 0 0 0 1 1 0 1 0","Supply sufficient monatomic gold and platinum group metal from the Zero Point Field","in its superconductive state and place it on the telomeres","at either end of all abnormal DNA strands. Allow the superconductive","state so created to encourage the rebuilding","of the DNA and damaged cells to their perfect state,","reactivating the body’s ‘junk’ DNA and any under-used parts of the brain.","In so doing, correct the physical and light body.","Crystal: Fuchsite Plant: Fennel","Master number 6","Number 3 7 8 3 5 6 7 1 9 0 8 3","Gateway7 1 0 0 0 0 1 1 0 0 1 0 1","Fibonacci Sequence: F(n+2) = F (n+1) + F(n)  -∞ ↔ +∞ 3 dimensions Green","B,E, Major Octave C3,5,10. Starting (n) = 1 and (n+1) = 4","Remove all emotional blocks that inhibit the communication between","our DNA and the crystalline lattice around it.","Crystal: Ulexite Plant: Clove","Master number 7","Number 1 6 8 3 1 9 1 8 3 7 2 3","Gateway9 0 0 0 0 0 0 0 0 1 1 1 0","Restore right spin of cells to aid the healing process","and the correct function of the sodium potassium pump.","Fibonacci Sequence: F(n+2) = F (n+1) + F(n)  -∞ ↔ +∞ 3 dimensions Black","B,C,G Major Octave C5. Starting (n) = 1 and (n+1) = 2","Cells to have sufficient receptor sites to ensure optimal","release of toxins into the extracellular fluid.","Crystal: Olivine Plant: Mate","Master number 7","Number 3 2 6 7 5 1 7 6 8 7 3 6","Gateway7 0 0 0 0 1 1 0 0 1 1 0 0","Chromosome replication to exclude any inherited traits from the Psora,","Syphillinum, Influenzae, Carcinosin, Tuberculosin, Gonorrhoea and","any other relevant miasms, including those from planetary and stellar origins or","from radiation, heavy metal pollution, vaccination or radiation.","Fibonacci Sequence: F(n+2) = F (n+1) + F(n)  -∞ ↔ +∞  3 dimensions White","B,C,G Major Octaves C4 and C6. Starting (n) = 2 and (n+1) = 3","Correct any x and y chromosome imbalances resulting from","attempts to honour a parental desire for a baby of the other sex.","Fibonacci Sequence: F(n+2) = F (n+1) + F(n)  -∞ ↔ +∞  3 dimensions Blue","B,G Major Octaves C3 and C5. Starting (n) = 1 and (n+1) = 2","Gases, ions and light","Eliminate excessive nitrogen from the body to","optimise internal gases and allow perfect photosynthesis within the cells.","Cells to be stimulated in the ratio Hydrogen x5, Nitrogen x1, Oxygen x3, Carbon x3.","Fibonacci Sequence: F(n+2) = F (n+1) + F(n) 3 dimensions Black","C,E Major Starting (n) = 2 and (n+1) =3 Crystal: Topaz Plant: Hyssop","Master number 9","Number 4 5 6 5 5 7 8 8 8 7 9 9","Gateway4 1 1 0 0 0 0 0 0 1 1 0 0","Ensure perfect light refraction within the cells","Crystal: Basanite Plant: Juniper","Master number 1","Number 4 5 7 5 5 7 8 8 8 7 9 9","Gateway2 1 1 0 0 0 1 0 0 0 1 0 1","In artificial light conditions, enhance the restricted wave range to the spectrum of","natural sunlight by drawing the missing elements from the Zero Point Field.","Neutralise the flickering perceived by the brain from fluorescent","lighting or other restricted wavelength sources,","thereby removing all risk of fit, seizure or other neurological distress.","Crystal: Ulexite Plant: Damiana","Master number 7","Number 3 6 2 5 1 4 6 8 4 1 5 7","Gateway4 1 0 1 1 1 1 1 0 0 1 0 1","Use the beneficial properties of the inert gases Argon, Neon, Xenon, Krypton","and Helium to stimulate healing through the chakras and","the etheric energy field, across all relevant dimensions.","Ensure that there is the energy of 3% Xenon in the gases inhaled so that","the building blocks of our etheric energy field are available in optimum quantities.","These inert gases to be used in whatever combination and proportions","support optimum healing. In particular use the gases to help in the following areas:","Helium - Reducing migraines and headaches - Opening up the crown chakra","- Sleep patterns - Physical repair during sleep","Neon - Helping indigestion - Healing the root chakra - Grounding - Anti-viral","Argon - Negative thoughts from this lifetime - Healing","the solar plexus chakra - Self-empowerment - Sleep patterns","Krypton - Negative thoughts from past lifetimes - Improving psychic abilities","- Epilepsy - Brain function","Xenon - Regeneration of teeth, bone & skin - Lungs and breathing","- Hip and backache repair - Repair of organs and tissues","Fibonacci Sequence: F(n+2) = F (n+1) + F(n)  -∞ ↔ +∞ 3 dimensions  Yellow","B,D,G Major Octaves C2 and C6. Starting (n) = 1 and (n+1) = 2","Correct balance and volume of ions to maintain perfect alkaline/acid","balance in all bodily systems.","Fibonacci Sequence: F(n+2) = F (n+1) + F(n)  -∞ ↔ +∞ 3 dimensions  White","B,E Major Octaves C2-6. Starting (n) = 2 and (n+1) = 3","Crystal: Emerald Plant: Clary Sage","Master number 7","Number 5 7 9 5 2 5 9 8 6 7 5 2","Gateway5 1 0 0 0 1 1 0 1 1 0 0 1","Posture","All postural suggestions to benefit from:","Crystal: Tiger’s Eye Plant: Fennel","Master number 4","Number 4 2 4 4 6 7 5 8 7 8 2 1","Gateway6 1 1 0 0 1 1 0 1 0 1 0 0","Correct any inaccuracies in proprioception, i.e. restore the internal positioning and","balancing awareness that controls sensory perception. Return all postural","control to the brainstem, overriding bad learned habits.","Assess each muscle for tension and relax it if under stress. Allow antagonist","and stabilising muscles to strengthen as","necessary to ensure muscular and skeletal balance.","Re-establish primary control by allowing the neck and shoulders to be free,","so that the head can go forward and up, allowing the back to lengthen and broaden.","Maintain natural breathing patterns at all times, especially when talking.","Environmental","Remove all stress, historical or current, arising from:","Vivaxis, i.e. leaving birth place Chemtrails from aeroplanes Microwaved food Petrochemical","pollution Solar flares Environmental vortex","Fibonacci Sequence: F(n+2) = F (n+1) + F(n)  -∞ ↔ +∞  3 dimensions Green","B Major Octave C2 Starting (n) = 1 and (n+1) = 2","Crystal: Fire Opal Plant: Bergamot","Master number 1","Number 1 8 5 3 6 7 9 8 6 4 2 5","Gateway5 0 0 0 1 1 0 1 0 1 1 0 1","Nutrition and absorption","Gulonolactone Oxidase to be produced to complete the enzyme","conversion of blood glucose to Vitamin C.","Crystal: Sugilite Plant: Carduus","Master number 6","Number 3 6 8 5 5 8 5 8 6 9 6 9","Gateway3 1 1 0 0 1 0 1 1 0 1 1 1","Nutrition to be distributed to areas of greatest need and priority in the body.","All necessary vitamin, mineral, amino acids, essential fatty acids,","fluids and cell salts to be taken at optimum levels from nutritional consumption.","If essential nutrients are being depleted by medication, a poor diet, or","any other reason, draw the necessary vibration from the Zero Point Field.","Crystal: Topaz Plant: Myrrh","Master number 4","Number 6 9 6 5 6 9 5 9 6 7 8 9","Gateway4 1 0 1 1 1 1 0 1 1 0 1 0","Cellular reproduction to include optimum number of","receptor sites for nutritional stimulation.","Fibonacci Sequence: F(n+2) = F (n+1) + F(n) -∞ ↔ +∞  3 dimensions Yellow","C,D,G Major Octaves C5 and C10. Starting (n) = 2 and (n+1) = 10","Digestive enzyme, stomach acid and bile to be at optimal levels","when required to ensure perfect digestion of all food and drink ingested.","Crystal: Fluorite Plant: Rhubarb","Master number 3","Number 4 7 1 7 4 3 7 4 3 8 8 1","Gateway7 0 1 1 1 1 1 1 1 1 1 1 1","Miscellaneous","Body temperature in normal, healthy, resting conditions to","be maintained at 98.804 degrees Fahrenheit.","Restore optimum blood chemistry.","Crystal: Tibetan Quartz Plant: Lemon","Master number 8","Number 5 6 5 2 7 4 3 9 2 5 8 6","Gateway5 1 1 1 0 1 1 1 1 0 1 1 0","Block all man-made electromagnetic stimuli to the lattice surrounding our","DNA that block the desire and ability to be healthy.","Crystal: Fire Opal Plant: Palmetto","Master number 8","Number 3 6 8 1 9 5 2 7 3 5 4 9","Gateway2 1 1 0 0 0 1 1 0 0 1 1 0","Remove all chronic physiological reactions in response to stress.","Crystal: Sulphur Plant: Ginkgo","Master number 6","Number 3 8 2 4 6 1 7 5 3 4 8 9","Gateway3 1 1 0 0 0 1 1 0 1 0 1 1","Fibonacci Sequence: F(n+2) = F (n+1) + F(n)  -∞ ↔ +∞  3 dimensions Red","B,D,G Major Octaves C5 C8 and C10. Starting (n) = 1 and (n+1) = 3","Optimise homocysteine levels by using the vibration of folic acid,","vitamins B6 and B12,","to ensure complete conversion of the amino acid methionine to cysteine.","Activate and optimise receptivity to colour therapy and sound therapy","Crystal: Sardonyx Plant: Verbena","Master number 7","Number 3 4 7 6 5 8 6 7 9 5 4 6","Gateway5 1 1 1 1 1 1 1 1 1 1 0 0","Absorb the optimum vibration of any of the following homoeopathic remedies that","would be life force enhancing and support the intent behind this system.","Aconite, Apis Arnica Arsenicum Belladonna Bryonia, Cantharis Chamomilla ypericum,","Ignatia Ledum Mercurius Nux Vomica Pulsatilla  Rhus Tox Rhus Grav Silica Ant Tart,","Arg Nit Calc Carb Calendula Carbo Veg China Drosera, Hepar Sulph Ipecac Kali Bich","Lachesis Lycopodium Mag Phos Natrum Mur Phosphorus Sepia Staphisagria Sulphur","The higher self and internal control systems to agree the optimum body weight","and composition, releasing all connected negative thoughts and any ‘famine’","worries created by previous low calorie or restricted","diets. Metabolism to adjust to the new metabolic rate agreed.","Crystal: Fluorite Plant: Turmeric","Master number 4","Number 4 3 6 2 6 4 5 1 2 8 2 6","Gateway3 0 0 0 1 1 0 1 0 1 0 1 1","Chapter 13","Emotional Healing","Release any negative core beliefs from all levels of the energy field, across all times,","and dimensions. Include the following beliefs where they apply:","About myself","I can do it I deserve pleasure, I get it right I deserve love, I am good enough I am lovable,","I am intelligent, I fit in, I am successful, People listen to me, I am competent,","I can show my true self and feelings, I am worthy, I do not need to please others to be worthy,","I am visible, I deserve to be alive, I am significan,  My parents are proud of me,","My mistakes are forgivable, I am interesting, I can have what I want, I give out enough love,","I deserve happiness, I am creative, I deserve abundance, People respect me,","I always meet people’s expectations, I am attractive, My opinions count, I fit in with the crowd, It’s OK to","have fun, I do what I want to do, I have found my calling, I am secure, I am in the right place,","I am meant to be here, I am proud of myself, I am in control, I am in charge of my life,","I have choices, I can stand up for myself, I am clean, I can say no, I am powerful","The world","Life is meant to be fun, People are basically kind and loving,","Happiness is always long lasting, I can make a comfortable living,","The world is a safe place , Hard work is not essential, People are out to support me,","I can be calm , in today’s world Life is fair , Good people are in the majority,","Life is kind, There is a higher plan to my life, Mankind deserves to be honored, Mankind will survive","My relationships","There is someone special out there for me,","I can live independently from my partner, I am meant to be in a relationship, I can find someone special,","Divorce is OK, We can have different hobbies, The opposite sex can be trusted,","Relationship issues are rarely my fault, The opposite sex are similar to us,","My partner listens to me, I always come out fine, Love is wonderful,","I tend to get it right, I am attractive and loveable, My partner can see my viewpoint,","I give my partner freedom, Partners want me for sex, Partners always support me,","Partners want me for me, not my money, Relationships are worth the effort,","My partner can survive without me, I can express my true self, Other people meet my expectations,","I can be happy and single, Relationships can last, My partner is good enough,","Relationships can be easy My partner understands me","Support these core beliefs with the relevant emotions derived from the following statement:","“I am unique, beautiful, talented and lovable. I accept that everything I do, feel and","say on my life’s path is part of my growth to higher states of understanding and","consciousness. I see the world as a wonderful playground for me to express my magnificence.”","Cellular replication to occur without receptor sites generated by emotional","addictions. If relevant, remove receptor sites connected with smoking.","Fibonacci Sequence: F(n+2) = F (n+1) + F(n)  -∞ ↔ +∞ 3 dimensions Red","D Major Octave C4. Starting (n) = 3 and (n+1) = 5","Assess cellular memory from all previous time periods and remove","inappropriate belief and behaviour patterns generated","Crystal: Rhodolite Plant: Rose","Master number 5","Number 1 5 7 9 8 3 5 7 1 4 2 7","Gateway5 0 1 1 0 0 1 0 0 1 1 0 1","By rebalancing all energy systems, remove all negative emotions and energies","Crystal: Tourmaline Plant: Bergamot","Master number 1","Number 3 9 7 5 4 3 2 0 1 1 3 8","Gateway6 1 1 1 1 0 0 0 0 0 1 1 0","Replace the energies so released with:","Abundance, Acceptance, Awareness, Beauty, Caring,","Cheerfulness, Cleanliness, Comfort, Concern, Confidence,","Consideration, Constructiveness, Courage, Courtesy, Creativity,","Desire, Determination, Endurance, Enthusiasm, Faith,","Forgiveness, Freedom, Friendliness, Generosity, Gentleness,","Giving, Freedom, Grace, Gratitude, Happiness, Harmony","Health, Helpfulness, Honesty, Hope, Hospitality,","Intelligence, Involvement, Joy, Justice, Kindness,","Laughter, Life, Listening, Love, Love of God,","Love of Life, Love of Men, Love of Self, Love of Women, Loyalty,","Mercy, Optimism, Order, Passion, Patience, Peace, Perseverence, Poise, Prosperity,","Punctuality, Purpose, Relaxation, Responsibility, Reverence, Self-control,","Self-esteem, Self-forgiveness, Self-preservation, Sincerity, Sobriety,","Strength, Success, Supportiveness, Sympathy, Tact,","Thoughtfulness, Tolerance, Trust, Truthfulness, Understanding,","Vitality, Wholeness, Wisdom, Worthiness, Zeal","Crystal: Celestite Plant: Gentian","Master number 1","Number 3 9 7 5 4 3 2 0 1 1 3 8","Gateway7 1 0 1 1 1 1 0 1 0 0 0 1","To remove limitations in cellular beliefs, apply:","Fibonacci Sequence: F(n+2) = F (n+1) + F(n)  -∞ ↔ +∞  3 dimensions White","B Major Octave C3. Starting (n) = 3 and (n+1) = 6","Restore true creativity under the auspices of:","Fibonacci Sequence F(n+2) = F (n+1) + F(n)  -∞ ↔ +∞ 3 dimensions Violet","C,F,G Major Octaves C1 and C6. Starting (n) = 9 and (n+1) = 9","Release any negative energy attached to vows, whenever they may have been","made. In particular, release the negative consequences of promising longlasting","love to an ex-partner, including marriage vows to a previous spouse.","Release and cancel any negative energy attached to curses, whenever they may","have been made. In particular, release the negative consequences of limiting","comments made by people in authority, such as teachers and parents.","Examples are “you will never amount to much”, or “I wish you were as clever as your brother”.","Remove any ‘psychological reversal’ that is encouraging the survival and","vitality of any toxins in the body, in particular candida and parasites. Release","the negative energy around all historical traumas that have created or","supported these self-destructive tendencies. Absorb the affirmation ‘Even","though I may have candida/parasites, I deeply and completely love, forgive","and accept myself’.","Release any stored trauma and negative memories from being laughed at,","scolded, crying, sobbing, or being made to cry or sob.","Remove all trauma and negative emotions from all the energetic fields of the","body acquired from past events","Crystal: Amber Plant: Celery","Master number 1","Number 3 9 7 5 4 3 2 0 1 1 3 8","Gateway5 0 0 1 1 1 1 0 0 0 1 0 1","Restore natural instinctive functioning of the amygdala. Ensure normal","processing of frightening stimuli at an unconscious level in the ventral region","of the amygdala and at the conscious level in the dorsal region.","Fibonacci Sequence: F(n+2) = F (n+1) + F(n)  -∞ ↔ +∞  3 dimensions Blue","B,G Major Octaves C5 and C6. Starting (n) = 2 and (n+1) = 4","Crystal: Garnet Plant: Mate","Master number 11","Number 2 5 6 7 5 3 6 4 7 7 8 5","Gateway4 0 0 1 1 0 1 1 0 1 1 0 1","Remove all the memory of fearful events stored in the anterior cingulate cortex.","Crystal: Howlite Plant: Dandelion","Master number 3","Number 2 4 2 5 7 7 4 8 9 4 1 4","Gateway5 1 0 0 0 1 1 1 1 0 1 0 1","Review all memories from conception onwards and heal all negative emotions","resulting from them, including depression, fear and anxiety.","Crystal: Ulexite Plant: Garlic","Master number 4","Number 7 4 6 8 3 4 5 8 3 4 7 8","Gateway1 0 1 1 1 1 0 1 0 1 1 1 1","Assess whether the conscious mind is sustaining symptoms through excessive","attention and over-analysis. If so, the higher self should encourage a reduction","in this intellectual ownership of symptoms, so that natural healing powers may","be reinstated. Provide opportunities for playful fun so that the purity and","optimism of the inner child may be released and allowed to thrive.","Fibonacci Sequence F(n+2) = F (n+1) + F(n)  -∞ ↔ +∞ 3 dimensions Blue","B,E,G Major Octaves C7 and C9. Starting (n) = 2 and (n+1) = 7","Crystal: Blue Pectolite Plant: Pepper","Master number 4","Number 2 8 6 5 3 7 1 2 3 9 7 5","Gateway2 0 0 0 1 1 1 0 1 1 1 0 1","Bring into general awareness all past experiences held within the conscious,","subconscious and body intelligence that are being avoided or denied.","Please enable the blocked emotion to be recognised, healed, and released.","Review all relationships for this person and soul, during any time period.","Remove all negative emotions still held within the energy field.","Crystal: Tibetan Quartz Plant: Palmetto","Master number 6","Number 7 8 4 7 5 2 1 9 2 1 8 6","Gateway3 0 0 0 1 1 1 1 0 1 1 0 1","Assess whether symptoms are self-serving at any level and, if so, remove all","of the underlying emotional causes that work against the optimum life plan.","Crystal: Tourmaline Plant: Belladona","Master number 6","Number 4 3 5 7 6 8 2 4 9 3 4 5","Gateway6 0 1 1 0 1 0 1 0 1 1 1 1","Undo negative effects on the cells and DNA of astrological influences,","whether real or perceived, from birth onwards.","Crystal: Zincite Plant: Ginkgo","Master number 5","Number 8 6 7 3 4 9 3 7 5 4 2 1","Gateway4 1 0 0 1 1 0 0 1 0 1 0 1","Reassess all memories to see if any perceived ‘facts’ are in reality distorted","belief systems. If so, please correct any misconceptions and remedy any","adverse effects they may be having on behaviour.","Heal any sense of rebellion against all other people and institutions, including","family members and self. Replace with patience, kindness,","forgiveness and understanding.","Crystal: Indicolite Plant: Jasmine","Master number 9","Number 5 6 8 6 9 4 7 5 8 6 2 6","Gateway 4 1 1 1 0 0 1 1 0 1 1 1 0","Assess whether the parental bonding has occurred fully. If not, establish the","ideal ages for this bonding so that it may happen now, healing any feelings of insecurity","that may have resulted. Similarly, if the parental bond remains","inappropriately strong or smothering, decrease it to a more balanced level.","Crystal: Emerald Plant: Juniper","Master number 9","Number 6 3 4 7 8 5 6 4 5 9 7 8","Gateway3 0 1 1 1 1 0 1 0 1 0 1 1","If a previous trauma has stopped the natural maturing process, so that the body","or personality is left at a certain age, please release this blockage so that all","elements of the mind, body and soul can operate at the correct emotional age.","Crystal: Fluorite Plant: Malva","Master number 8","Number 6 4 2 1 7 5 6 4 8 9 7 3","Gateway3 0 0 0 1 1 0 0 1 1 0 1 1","For symptoms of depression, ensure that levels of Cortical Releasing Factor","(CRF) and the ACTH it stimulates are produced at blueprint levels, thereby","reducing the levels of these stress hormones. Where elevated CRF is the result","of earlier trauma and upset, please heal these memories with light,","unconditional love and total forgiveness.","Chapter 14","General healing","Quantum Healing","All quantum effects to be amplified by the vibration of:","Fibonacci Sequence: F(n+2) = F (n+1) + F(n)  -∞ ↔ +∞  3 dimensions Blue","B,F Major Octaves C2,3,4,5 and 6. Starting (n) = 2 and (n+1) = 3","Crystal: Peridot Plant: Sage Clary","Master number 5","Number 2 6 7 6 4 7 9 6 7 5 5 4","Gateway1 0 0 1 1 1 0 1 1 0 1 0 0","Focus tachyon energy into all levels of the body and its surrounding energy fields to","ensure perfect connection with Universal Intelligence.","Ensure all interractions between the body’s Subtle Organising","Energy Fields (SOEFs) and tachyon energy","lead to the harmonisation and evolution of the SOEF rather.","than destabilisation and decay.","Use Zero Point Field energy focused through tachyon particles to revitalise all foods and","drinks consumed,to their optimum energetic state, overriding the effects of cooking,","processing, storage, freezing, genetical modification, pesticides and fertilizers.","Remove all interference from consciousness that is blocking the flow","of tachyon energy into the body and its various energy fields.","Ensure all bifurcation points within the body’s Subtle","Organising Energy Fields (i.e. the moment when they temporarily collapse and reform)","have sufficient tachyon energy available","to re-establish themselves at the optimum level of","vitality and the highest level of order.","Re-iterate to infinity the natural fractal progressions set at conception","where they have moved out of perfect alignment.","Assess the ‘pilot wave’ (the vibrational frequency we put out ahead of","us that attracts people, events and situations into our lives).","Cleanse the wave of any negative energies and emotions.","General healing","Please control ego, to help awareness of the connection that exists between","us all, the power of One and the illusion of separation.","Crystal: Heliotrope Plant: Celery","Master number 4","Number 3 8 6 2 7 9 5 3 7 8 5 4","Gateway2 1 0 1 0 0 1 1 1 0 1 1 1","All physical elements of the body and its associated energy field to be formed","from harmonic frequencies of light as denoted by the equation:","E = (c + √1/C ) c²","Synchronise  with:","Earth vibration:","Crystal: Turquoise Plant: Mate","Master number 2","Number 1 7 0 3","Gateway3 0 1 0 0","Speed of light:","Crystal: Iolite Plant: Comfrey","Master number 8","Number 1 4 3 9","Gateway4 1 1 0 0","Superconscious, conscious and sub-conscious mind to","remain in perfect contact and balance at all times.","Please ensure the Governing meridian replaces","energy to the Central meridian as it is used.","Delete all stress receptors on the meridians and","chakras and restore optimum function and balance.","Please ensure suitable ‘grounding’ at all times.","Establish the ‘constitutional factor,’ i.e. the aspect within the","Chinese 5 element theory that normally controls behaviour and emotional health.","Conclude all internal energy work with the balancing of this element.","Crystal: Tree Agate Plant: Rue","Master number 9","Number 8 3 4 5 3 7 4 4 5 6 7 7","Gateway3 0 1 0 1 1 1 0 1 0 1 1 1","Correct all electrical switching within the energy meridians","Crystal: Thulite Plant: Lemon","Master number 5","Number 3 2 4 8 7 6 6 2 4 9 7 1","Gateway4 1 0 0 0 1 1 1 1 0 1 0 1","Please use to optimum effect the spiritually uplifting properties of negative green,","ultraviolet and the higher harmonic frequencies of gold.","At the same time, neutralise any negative influences of negative green","that may emanate from all structures, buildings, statues and shapes generally.","Fibonacci Sequence: F(n+2) = F (n+1) + F(n)  -∞ ↔ +∞  3 dimensions Yellow","B,F,G Major Octave C7. Starting (n) = 2 and (n+1) = 4","Remove all geopathic and underground water stress from the home","and place of work by flooding the area with light,","converting all negative lines to positive lines.","In so doing, please remove the negative effects of radon gas,","and black streams. Repeat this process whenever needed.","Crystal: Boji Stone Plant: Arnica","Master number 8","Number 7 8 6 5 9 3 1 6 8 5 3 1","Gateway6 0 1 1 0 1 0 1 1 1 0 1 1","Adhere to the statement ‘I live in the moment, I do not dwell on past events and","I think ahead only so that I may adequately plan for my future tasks and responsibilities’.","Crystal: Diamond Plant: Ginseng","Master number 6","Number 5 3 6 8 4 7 1 2 4 8 9 3","Gateway4 0 1 1 1 1 1 0 1 1 0 0 1","If a symptom is a strategy by the Higher Self to offer direction or","teaching, bring this guidance to conscious awareness so","that the energy blockage around it can be released.","The conscious mind is asked to release all fear and","disconnect from any energies feeding on it.","Crystal: Tektite Plant: Radish","Master number 3","Number 8 9 8 7 8 8 9 6 2 4 5 1","Gateway7 0 1 1 0 1 0 1 0 1 1 0 1","Connect fully with the Earth and Nature to draw whatever","life-enhancing energy and understanding they may offer.","Crystal: Iron Pyrites Plant: Hamamelis","Master number 4","Number 3 6 9 2 4 8 3 9 3 7 5 8","Gateway6 0 0 1 0 0 1 0 1 1 0 1 1","Using the multidimensional vibrating loops of ‘string’ that are the base of","all matter, reconnect to universal energy and its full healing potential","Crystal: Kyanite Plant: Gumplant","Master number 7","Number 3 6 7 1 8 9 4 7 5 3 6 2","Gateway3 1 0 1 1 0 1 1 0 1 1 1 0","Resonate with the statement ‘Now is the time to heal and","I choose to heal’until it is fully accepted by every cell in the body.","Crystal: Fluorite Plant: Ginger","Master number 4","Number 3 5 9 1 5 5 7 8 3 2 9 1","Gateway3 0 1 1 1 0 1 0 1 1 0 1 1","Create perfect resonance of the arachnoid membrane of the brain,","restoring our cellular memory of our true identity.","Crystal: Turquoise Plant: Comfrey","Master number 5","Number 7 1 1 1 9 5 0 6 2 3 4 2","Gateway5 1 0 0 1 0 0 0 0 0 1 0 1","For general healing and reconnection to Universal Intelligence :","Crystal: Green Tourmaline Plant: Anise","Master number 6","Number 7 3 0 6 5 4 3 8 7 6 2 1 2 5 7 9 3 4 2 7 5 4 3 9","Colour O B W R G I Y W V B W B O Y G I B G W B G I Y G","Crystal: Turquoise Plant: Olive","Master number 1","Number 3 4 7 6 8 6 4 8 6 3 4 5","Gateway4 1 0 1 0 1 1 0 1 1 0 1 1","Crystal: Iceland Spar Plant: Benzoin","Master number 1","Number 1 4 3 8 2 9 4 4 5 7 8 9","Gateway4 0 1 1 0 1 0 1 1 1 0 1 0","Activate the crystal merkabah, tuning the 8 original cells in the Zona Pellucida","back to conception, cleansing them of all negative vibrations and then","retuning them to the present time.","Crystal: Garnet Plant: Melissa","Master number 3","Number 9 9 7 8 9 8 7 9 9 9 9 9","Gateway4 0 0 1 0 1 1 1 0 1 0 1 1","Ensure perfect conversion of all substances consumed into their highest","light frequency. Stimulate the cells with this perfect vibration.","Crystal: Jade Plant: Wormwood","Master number 11","Number 5 8 6 2 6 6 9 6 4 5 1 7","Gateway6 1 1 1 0 1 1 0 1 0 1 1 1","Delete the negative effects on all dimensions of the","expansion of the psychic centres of the body,","while still allowing full development of intuition and connection to the Higher Self.","Crystal: Amethyst geode Plant: Juniper","Master number 8","Number 3 5 6 7 5 9 1 5 4 3 7 7","Gateway8 0 0 1 1 0 1 0 1 1 0 1 1","All harmonics to be supported by the key","numerological meaning behind each number:","0 The container of all, the absence of quantity.","1 The beginning, the Creator, unity, the sum of all possibilities.","2 Duality, the dual nature of life with separate spirit and body.","3 The physical realm, creation, completion and growth. Body, soul and spirit.","4 The illusion of time. The 4th dimension. Wholeness, completion, justice, perfection.","5 The human form and the five senses.","6 Equilibrium, harmony, balance, union, love, health, beauty, good luck.","7 Humanity, connection to God/Source, the Universe, perfection.","8 Infinity, paradise regained, solidarity, completion.","9 Fulfilment, attainment, compassion, earthly paradise.","10 Rebirth, awakening of soul, perfection, completion. (shown as ‘1’ in manual).","11 Master number, intuition, idealism, love.","Has negative concept of treachery and betrayal from hidden enemies.","The five senses, supported by every DNA sequence in our body,","to accurately translate all waveforms received into","physical reality, ignoring interference","and bias from negative emotions, trauma, pollutants, chemicals and","man-made electromagnetic energy fields, subliminal programming and symbolism.","Return the Assemblage point to its optimum position and angle,","correcting any fragmentation and anchoring it at this new point.","Ensure that we behave, feel and see the world in line with this new position.","Crystal: Tourmaline: Plant: Basil","Master number: 7","Number 1 4 5 4 4 7 8 9 9 8 5 6","Gateway7 1 0 0 1 0 1 1 0 1 1 0 1","Cancel any inappropriate survival mechanisms that go beyond our","basic protection in times of acute physical danger.","In particular, cancel any programmes based on sabotage,","suppressed traumas, self-limiting fears and beliefs, shock and secondary gain.","Resonate with the affirmation “the world is a","safe place for me to live in”","Crystal: Blue Pectolite Plant: Lemon","Master number: 4","Number 6 4 2 0 3 3 0 1 4 6 2 0","Gateway6 0 0 1 1 0 1 1 1 0 1 0 0","Understand that true success is available to us all,","but is a reflection of what we become rather than what we have achieved or accumulated.","Create balance between the various archetypes that help","define our personalities and character.","Ensure that the positive attributes of each style are used","when appropriate to support our life’s journey and the negative aspects healed.","Avoid any negative healing reaction by absorbing the resonance of 762 hertz for","the optimum time period at the optimum frequency.","The higher self is asked to phase conjugate, or block, all foreign","vibrational transmissions that are inhibiting","our natural balance in any way or our ability to","detect foreign energies within our energy field.","Chapter 15","Spiritual Healing","Under the Laws of Grace, we ask the powers of the Light, with our grateful","thanks, to clear and protect all levels of the energy field of this soul and its","family, loved ones and soul group, within all dimensions and at all times, past","present and future, across the entire Universe.","Please honour the requests of this section with unconditional love, forgiveness","and without judgement; protecting and cleansing the property and","environment of this soul, its family and loved ones.","Crystal: Blue Pectolite Plant: Clove","Master number 8","Number 3 6 7 5 7 8 9 8 9 9 9 9","Gateway2 0 1 1 0 0 1 1 0 1 0 1 1","May all negative thought forms, energetic attachments, fixed and fluid,","possessions, alien energies and cordings within the mind/body energy field be","bound and taken into a place of choosing of the Light.","This process to be assisted by the following:","Fibonacci Sequence: F(n+2) = F (n+1) + F(n) -∞ ↔ +∞  3 dimensions Black","B major Octave C3 Starting (n) = 0 and (n+1) = 1","Crystal: Ulexite Plant: Chicory","Master number 3","Number 6 9 6 9 6 6 3 3 3 6 6 3","Gateway3 0 0 1 1 0 1 0 1 0 1 1 0","Use also the harmonic of Holy Water from Lourdes:","Crystal: Sardonyx Plant: Damiana","Master number 5","Number 7 6 3 7","Gateway 1 0 1 1","May the same releasing process be repeated for this soul, soul group and loved","ones across all dimensions anywhere within the Universe and over all time","periods, past, present and future. Include also any transitional status, such as in","the womb, during conception, after death and during the vulnerable periods","around any significant vibrational change. This help is honoured and received","with thanks.","To help remove external energies into the light, please use the vibrational","energy of a perfectly formed six sided clear quartz crystal.","Crystal: Clear Quartz Plant: Fennel","Master number 7 Animal: Aye-aye","Number 2 7 1 4 5 8 9 3 2 7 3 4 1 0 8 6","Gateway2 0 1 0 0 1 0 0 1 0 1 1 0 1 0 1 1","Julia Set: 9 iterated 92 + C -∞ ↔ +∞  all dimensions White","C Major Octaves C3,7 and 10, continuously in all directions","of time and across all systems of time.","Please seal the energy field against further interference from powers of less","than 100% light and maintain this protection indefinitely. May this happen","across all dimensions and all time periods, past, present and future","Fibonacci Sequence: F(n+2) = F (n+1) + F(n)  -∞ ↔ +∞  3 dimensions","Yellow B,G Major Octave C4. Starting (n) = 1 and (n+1) = 6","Please may this soul be released from all conscious and unconscious contracts","made with energies of less than 100% light in any lifetime, past, present or","future and in any dimension. Please include contracts made by anyone in this","body and its entire genetic lineage.","We ask that any and all soul elements and personality traits left in previous","relationships, arising from any time period or lifetime, past, present or future","and in any dimension, be healed with light in line with the processes detailed","in this section. When clear of any influences from energies of less than 100%","pure light, and at the appropriate time, these lost soul elements to be returned","to this soul and fully integrated, with unconditional love, forgiveness and no judgement.","Crystal: Jade Plant: Garlic","Master number 3","Number 9 8 6 4 5 5 5 6 3 5 5 5 8 7 9 6","Gateway7 0 0 0 1 1 0 1 1 0 1 0 1 0 1 1 1","We ask that the powers of the Light provide protection against ‘psychic attack’","and ‘psychic energy draining’ from any source. Please ensure that all negative","cords connecting to these energies are permanently cut and healed, with","unconditional love, forgiveness and no judgement.","May all attached elements of other people’s souls and personalities, arising","from any time period or lifetime, past, present or future and in any dimension","be healed with light, relieved of any influences from energies of less than","100% pure light and returned to their source. Please also cut and heal energetic","bonds with that source, with unconditional love, forgiveness and no judgement.","Crystal: Howlite Plant: Benzoin","Master number 7","Number 5 6 8 9 6 3 6 5 8 8 9 6","Gateway8 1 1 1 0 0 1 1 0 0 1 0 0","Please bring all soul energy that has shifted out of alignment, evacuated or","faded, back into perfect balance, where it will be received with thanks and honour.","Fibonacci Sequence: F(n+2) = F (n+1) + F(n)  -∞ ↔ +∞  3 dimensions Red","B,D Major Octave C4. 20 seconds. Starting (n) = 1 and (n+1) = 3","Please sever and return to the light as light any vows of poverty, chastity,","solitude, isolation and suffering made in any lifetime, past present or future, in","any dimension, anywhere in the Universe, undoing the effects of these vows in","all directions of time.","We petition Source and all relevant souls to release this soul from any adverse","influences generated from past, concurrent and future lives, at any time, in any","dimension, and in any place. Where forgiveness is required, we humbly","request it from all those affected and ask that it is accepted with honour,","unconditional love and no judgement.","Please assess the optimal aura width so that the energy field is protected from","unwelcome interference from other people and adjust the aura width","depending on circumstances and environment.","Crystal: Bloodstone Plant: Parsley","Master number 9","Number 3 4 7 4 1 5 8 2 6 4 3 7","Gateway6 1 0 0 1 0 1 0 0 0 1 1 0","Please ensure that all cells ignore all transmissions from sources that are not","true to the Light, including anything at the frequency 4.53.","We also ask you to nullify inappropriate foreign objects in the body.","Please apply the same cleansing and growth process to all guides and spiritual","supporters for this soul so that all assistance from spirit comes from a place of","light and supports the optimum life plan.","Where an energetic attachment needs persuasion to leave its current home in","favour of a journey to the light, we invite the powers of the light to explain to","this lost soul the following:","1. That it is no longer in physical form and is intruding on a soul that is..","2. Once we have left our physical form, it is never appropriate to attach to","the energy field of another incarnated soul. It hinders the journey and","evolution of both souls affected. We cannot retain our material wealth,","power or relationships.","3. If we have lessons still to learn, we can come back again in physical","form if we wish.","4. When we return to spirit, there is no judgement other than that imposed","by ourselves on reflection of our life’s events.","5. There is no punishment inflicted on us by a higher power for our","perceived errors or poor judgement. There are only lessons to learn","which we may choose to re-examine in a subsequent incarnation.","6. Souls we have ‘wronged’ are not waiting in spirit to exact their revenge.","7. We may have chosen the key elements of our previous life as a means","of exploring the different emotions and lessons of life in physical form.","8. Any other information deemed appropriate","If this explanation can be supported by the appearance of appropriate loved","ones, other members of that soul group, or souls apparently wronged who wish","to show their forgiveness, please facilitate this re-union.","Where the energetic attachment has forgotten its connection to light and love,","we ask the powers of light to remind it of its own spark of light and Divinity","held deep within, showing it love and protection. In particular, please stress the following:","1. The light is the truth","2. The light is stronger than the dark","3. There is a spark of light within every soul","4. The light represents love and healing and does not burn or cause harm","5. A soul cannot cease to exist","6. There is no punishment for losing ones way, only future lessons that the","soul may choose to explore.","7. These basic truths can be tested and proven in the safety of a protective","bubble of light extending around the soul.","8. If the points above prove the falsehood of their previous understanding,","that soul should challenge all threats of punishment and fear it has ever been subjected to.","If any spirit attachment is threatening the host with damage to their loved ones","if they are forced to leave, we ask that these loved ones are protected so that","the host can exercise their free will to release the attachment without fear of reprisal.","Similarly, if there is any threat that removal would negate the","beneficial aspects of that relationship in past, concurrent, present or future","lives, please ensure that replacement support is made available from other","light beings so that the attachment can be released safely now.","If the attached energy claims rights of possession due to breaches of Universal","law, whether in this life, a past life, or through this soul’s ancestral lineage, we","petition the powers of Light to heal these breaches so that the attachment can be released.","Please heal and close any inappropriate vortices of energy resonating within","my chakras, or anywhere else within my energy field. In doing so, please","release their connection to other dimensions.","Crystal: Quartz Plant: Garlic","Master number 6","Number 4 7 6 9 8 8 7 3 1 4 6 6","Gateway1 0 1 1 1 1 1 1 0 0 0 1 0","Please release any negative effects within my energy field of any interference","in my receipt of sunlight energy; either direct or reflected from the moon.","We ask all this from a position of respect, appreciation and understanding and","all information changes and healing is received with thanks,","honour and unconditional love.","Crystal: Obsidian Plant: Boldo","Master number 4","Animal: Great White Shark","Number 9 6 8 6 5 8 5 6 3 6 8 6","Gateway6 0 0 0 1 1 0 0 1 0 1 0 0","Chapter 16","Chakra Healing","Integrate all 36 multi-dimensional chakras, opening them when appropriate and","healing all imbalances in their spin, size and overall health.","This might require the opening up of a higher dimensional chakra","or the healing of issues at a lower level. All resonances in Octave C10:","(Although there are 36 sets of codes in total,","this does not mean that there are 36 separate chakras.","We are only working here with the 7 core chakras","plus an 8th –which I know as the Soul Star Chakra – in the 3rd dimension.","We are therefore looking to stimulate and heal our","core 7 chakras at the 3rd, 4th, 5th, 6th and 7th dimensions","as we become ready to take these steps towards our","highest state of being while in physical form.)","Fibonacci Sequence: F(n+2) = F (n+1) + F(n)  -∞ ↔ +∞  3 dimensions Yellow","B,C,D,E Major Octave C3,7,10. Starting (n) = 1 and (n+1) = 5","Chakra 1 – Base","Crystal: Transmitter Quartz Plant: Dill","Number 2 7 9 0 1 1 7 8 8 9 0 1","Gateway2 1 1 1 0 1 1 0 1 1 1 1 0","Chakra 2 – Sacral","Crystal: Fire Opal Plant: Radish","Number 1 0 1 7 8 9 0 6 7 8 5 5","Gateway3 0 0 0 0 1 0 1 0 1 1 1 1","Chakra 3 – Solar Plexus","Crystal: Garnet Plant: Turmeric","Number 7 8 7 7 4 3 4 7 6 7 6 5","Gateway4 1 0 1 0 1 1 1 0 1 1 1 1","Chakra 4 – Heart","Crystal: Fluorite Plant: White Willow","Number 4 5 4 6 8 6 7 8 8 7 6 6","Gateway8 0 1 1 0 0 1 0 0 1 1 0","Chakra 5 – Throat","Crystal: Sugilite Plant: Boldo","Number 5 6 6 7 8 6 7 7 7 7 7 7","Gateway7 1 1 1 0 1 0 0 1 1 1 0 0","Chakra 6 – Brow","Crystal: Elestial Elbaite Plant: Lavender","Number 7 8 7 7 7 7 7 7 7 7 5 5","Gateway 4 1 0 0 1 1 0 1 1 1 1 1 1","Number 5 6 6 6 6 6 5 6 6 6 6 6","Gateway2 1 1 1 0 0 1 1 1 1 0 1 1","Chakra 8 – Aura","Crystal: Sunstone Plant: Clary Sage","Number 6 6 6 7 6 6 3 3 3 3 3 3","Gateway3 1 0 1 0 0 1 0 1 0 0 1 1","Chakra 9 – Base (Earth)","Crystal: Topaz Plant: Turmeric","Number 6 5 5 5 5 5 1 2 2 3 3 3","Gateway4 1 1 0 0 1 0 1 1 0 1 0 1","Chakra 10 – Sacral (solar system)","Crystal: Arebula Plant: Gentian","Number 5 4 3 3 4 4 3 3 3 3 3 3","Gateway7 1 0 0 1 0 1 1 0 0 1 0 0","Chakra 11 – Solar Plexus (galaxy)","Crystal: Amber Plant: Lavender","Number 3 3 3 2 2 1 3 3 3 3 3 3","Gateway8 0 1 0 1 0 1 0 1 0 1 0 1","Chakra 12 – Heart (Universe)","Crystal: Dragons Blood Plant: Pepper","Number 1 1 1 1 1 2 3 3 3 3 3 3","Gateway7 0 0 1 1 0 1 0 1 0 1 1 0","Chakra 13 - Throat","Crystal: Sulphur Plant: Turmeric","Number 3 2 1 1 2 3 5 5 5 5 5 5","Gateway8 1 0 1 0 0 1 0 1 1 0 1 0","Chakra 14 – Brow","Crystal: Ulexite Plant: Camphor","Number 6 6 6 8 8 8 6 6 6 6 6 6","Gateway9 0 1 0 0 1 0 1 0 1 0 1 1","Chakra 15 – Crown","Crystal: Nephrite Plant: Chamomile","Number 8 8 8 8 8 8 6 6 6 6 6 6","Gateway3 0 1 0 0 1 0 1 0 1 0 1 1","Chakra 16 – Base","Crystal: Fluorite Plant: Pepper","Number 8 9 9 9 9 9 2 2 2 3 3 3","Gateway4 1 0 0 1 0 0 1 1 0 1 1 1","Chakra 17 – Sacral","Crystal: Sulphur Plant: Sesame","Number 10 10 10 10 9 9 2 2 2 3 3 3","Gateway5 0 1 0 1 0 1 0 0 0 1 1 1","Chakra 18 – Solar Plexus","Crystal: Elbaite Plant: Ylang Ylang","Number 9 10 9 9 10 10 3 3 3 3 3 3","Gateway6 1 1 1 1 0 0 0 0 1 1 1 0","Chakra 19 – Heart","Crystal: Stillbite Plant: Garlic","Number 10 9 9 9 10 10 3 3 3 2 2 2","Gateway3 0 1 0 1 1 1 0 1 1 1 0 0","Chakra 20 – Throat","Crystal: Sunstone Plant: Cardus","Number 11 9 9 10 10 10 2 2 2 2 2 2","Gateway2 1 1 1 0 1 0 0 1 1 1 1 1","Chakra 21 – Brow","Crystal: Diamond Plant: Chicory","Number 10 8 9 9 10 10 3 3 3 3 3 3","Gateway4 0 0 0 0 1 1 1 0 0 1 1 0","Chakra 22 – Crown","Crystal: Emerald Plant: Yarrow","Number 9 10 9 9 10 10 3 3 3 3 3 3","Gateway3 0 0 1 1 0 0 0 0 0 0 1 1","Chakra 23 – Base","Crystal: Sugilite Plant: Comfrey","Number 10 9 9 9 9 9 5 5 5 5 5 5","Gateway1 1 0 0 0 1 1 1 1 0 0 1 1","Chakra 24 – Sacral","Crystal: Dragons Blood Plant: Hamamelis","Number 9 10 9 9 9 9 6 6 6 6 6 6","Gateway2 1 0 0 1 0 1 1 0 0 1 1 0","Chakra 25 – Solar Plexus","Crystal: Sulphur Plant: Peppermint","Number 9 10 10 10 10 10 6 6 6 6 6 6","Gateway3 0 1 1 1 0 0 0 0 0 1 1 0","Chakra 26 – Heart","Crystal: Variscite Plant: Wormwood","Number 10 11 11 10 10 10 5 5 6 6 6 6","Gateway4 0 0 0 1 0 1 1 1 0 1 1 1","Chakra 27 – Throat","Crystal: Fuschite Plant: Bergamot","Number 10 10 10 10 10 10 5 5 5 5 6 6","Gateway5 1 0 0 1 0 1 0 0 0 0 0 0","Chakra 28 – Brow","Crystal: Stillbite Plant: Angelica","Number 10 10 10 10 10 9 6 6 6 6 6 6","Gateway5 1 1 1 1 1 1 1 1 1 1 1 0","Chakra 29 – Crown","Crystal: Elbaite Plant: White Willow","Number 9 9 9 9 9 9 5 5 5 5 5 5","Gateway1 1 0 1 1 1 1 1 1 1 1 1 1","Chakra 30 – Base","Crystal: Sunstone Plant: Camphor","Number 9 9 9 9 9 9 4 4 4 4 4 4","Gateway2 1 1 1 1 1 1 1 1 1 1 1 0","Chakra 31 – Sacral","Crystal: Fire Opal Plant: Pepper","Number 9 9 9 9 9 9 4 4 4 4 4 4","Gateway4 1 1 0 0 0 0 0 0 0 0 0 0","Chakra 32 – Solar Plexus","Crystal: Cymophane Plant: Valerian","Number 9 9 9 9 9 9 2 2 2 2 2 2","Gateway7 0 0 0 0 0 0 0 0 0 0 0 0","Chakra 33 – Heart","Crystal: Stillbite Plant: Cinnamon","Number 9 9 9 9 9 9 1 1 1 1 1 1","Gateway8 1 1 1 1 0 0 0 0 0 0 0 0","Chakra 34 – Throat","Crystal: Fluorite Plant: Turmeric","Number 9 9 9 9 9 9 1 1 1 1 1 1","Gateway9 1 1 0 0 0 0 0 0 0 0 0 0","Chakra 35 – Brow","Crystal: Blue Pectolite Plant: Ginseng","Number 9 9 9 9 9 9 1 1 1 1 1 1","Gateway6 1 0 0 0 0 0 0 0 0 0 0 0","Chakra 36 – Crown","Crystal: Vogel Quartz Plant: Rhubarb","Number 9 9 9 9 9 9 2 2 2 2 2 2","Gateway1 1 1 1 1 0 0 0 0 0 0 0 0","Chapter 17","Affirmations","Please absorb the healing intent behind all of the following affirmations","where appropriate:","Love","I deeply love and accept myself just the way I am.","I resonate with the love that exists in every cell of my body.","This love is limitless; a bottomless well that radiates out from me in all directions,","uplifting all who come into contact with me.","In return, I feel the love of those I meet and recognise the source of love within them.","I attract loving people and situations into my life, returning the love I exude many times over.","I allow the unconditional love of the Universe into my life and let it work within me,","lifting my life to new realms of possibilities.","By allowing love into my life, I am filled with a constant state of bliss. I see the","perfection and purity in all people and all situations I encounter.","I live in the flow of life and the flow of life lives within me. Loving events and people","seek me out, recognising that I totally deserve them.","I give thanks for the loving gifts I receive and my gratitude enhances my gifts in an","ever increasing virtuous circle.","Relationships","I understand my needs and desires. I attract other people into my life who will help","me manifest my needs and in doing so I help them meet theirs.","I attract others into my life who help me express my completeness.","My life is harmonious.","I have the perfect partner.","Healing","Now is the time to heal. I accept that whatever loving support I receive, the ultimate","choice and responsibility to heal is mine.","Every cell in my body vibrates with perfect health.","I heal quickly and easily","I choose events and people in my life that support my healing. I choose to consume","vibrant food and drink and to take all other steps that respect","my body and help my healing.","I love my body and treat it accordingly.","Abundance","I deserve unlimited abundance in my life.","My career is rewarding and fulfilling and I am paid appropriately for my efforts.","I trust the Universe to provide me with all that I need.","I am a successful person and my intuitive and creative abilities","flow through me at all times.","I have complete confidence and faith in myself.","Forgiveness","I make no judgement about myself or other people.","I forgive everyone who has ever harmed me physically or emotionally, whether intentional or inadvertent.","I forgive myself for being weak when I should have been strong, dominant when I","should have been sympathetic and silent when I should have spoken up.","When I forgive, I do so completely and unconditionally.","I accept that there are no mistakes, only learning opportunities, and that sensible risk","taking is a necessary part of my growth and development.","I live in the moment and release any worries that past or future events create within me."];
+
+
+  
+  
+     // ======================================
+
+const colors = [
+
+    "red",
+    "orange",
+    "yellow",
+    "green",
+    "blue",
+    "indigo",
+    "violet"
+    
+];
+
+// ======================================
+// SPHERE
+// ======================================
+
+const levelCount = 33;
+
+let sphereItems = [];
+let sequenceForward = false;
+
+
+let phase = Math.PI;
+
+
+
+let colorIndex = 0;
+let previousDirection = 1;
+
+// ======================================
+// CREATE ITEM
+// ======================================
+function nextIndex(i){
+
+    return (
+        i + 1
+    ) % numbers.length;
+}
+
+function prevIndex(i){
+
+    return (
+        i - 1 +
+        numbers.length
+    ) % numbers.length;
+}
+function createTopItem(){
+
+    let newIndex;
+
+    if(
+        sphereItems.length === 0
+    ){
+
+        // Start from the LAST text
+        newIndex =
+            numbers.length - 1;
+
+    }
+    else{
+
+        newIndex =
+            prevIndex(
+                sphereItems[0].index
+            );
+    }
+
+    sphereItems.unshift({
+
+        index:
+            newIndex,
+
+        value:
+            String(
+                numbers[newIndex]
+            ),
+
+        color:
+            colors[colorIndex],
+
+        level:
+            0
+
+    });
+
+    colorIndex =
+        (colorIndex + 1)
+        %
+        colors.length;
+
+ 
+}
+
+function createBottomStartItem(){
+
+    const newIndex = 0;
+
+    sphereItems.push({
+
+        index:
+            newIndex,
+
+        value:
+            String(
+                numbers[newIndex]
+            ),
+
+        color:
+            colors[colorIndex],
+
+        level:
+            levelCount - 1
+
+    });
+
+    colorIndex =
+        (
+            colorIndex + 1
+        )
+        %
+        colors.length;
+}
+// ======================================
+// DRAW
+// ======================================
+
+
+
+function drawSphere(){
+
+    const sphere =
+        document.getElementById(
+            "sphere"
+        );
+
+    sphere.innerHTML = "";
+
+   
+    sphereItems.forEach(item => {
+
+        const div =
+            document.createElement(
+                "div"
+            );
+
+        div.className =
+            "sphereItem";
+
+        div.innerText =
+            item.value;
+
+        div.style.color =
+            item.color;
+
+      
+const lineHeight = 36;
+
+const y =
+     -10 +
+ item.level * lineHeight;
+
+
+        div.style.top =
+            y + "px";
+
+        div.style.left =
+            "50%";
+
+        div.style.transform =
+            "translate(-50%,-50%)";
+
+        const length =
+            String(
+                item.value
+            ).length;
+
+        const fontSize =
+            Math.max(
+              
+           
+
+  18,
+        36 - length * 0.5
+
+
+            );
+
+      div.style.fontSize = "24px";
+// div.style.fontSize =
+ //           fontSize + "px";
+       sphere.appendChild(div);
+
+    });
+}
+
+
+
+// ======================================
+// MOVEMENT
+// ======================================
+
+
+function moveForward(step){
+
+    sphereItems.forEach(item=>{
+        item.level += step;
+    });
+
+    sphereItems =
+        sphereItems.filter(
+            item => item.level < levelCount
+        );
+
+    if(
+        sphereItems.length === 0 ||
+        sphereItems[0].level >= 1
+    ){
+        createTopItem();
+    }
+}
+
+  
+function moveBackward(step){
+
+    sphereItems.forEach(item=>{
+        item.level -= step;
+    });
+
+    sphereItems =
+        sphereItems.filter(
+            item => item.level >= 0
+        );
+
+    if(
+        sphereItems.length === 0 ||
+        sphereItems[sphereItems.length-1].level <= levelCount-2
+    ){
+
+      
+colorIndex =
+    (
+        colorIndex - 1 +
+        colors.length
+    )
+    %
+    colors.length;
+
+
+const newIndex =
+
+    sphereItems.length === 0
+    ? numbers.length - 1
+    : nextIndex(
+        sphereItems[
+            sphereItems.length - 1
+        ].index
+    );
+
+sphereItems.push({
+
+    index:
+        newIndex,
+
+    value:
+        String(
+            numbers[newIndex]
+        ),
+
+    color:
+        colors[colorIndex],
+
+    level:
+        levelCount - 1
+
+});
+
+    }
+}
+
+// ======================================
+// SINUSOID
+// ======================================
+
+let previousTimestamp = null;
+
+function loop(timestamp){
+
+    if(previousTimestamp === null){
+        previousTimestamp = timestamp;
+    }
+
+    // Real elapsed time in seconds
+    let deltaTime =
+        (timestamp - previousTimestamp) / 1000;
+
+    previousTimestamp = timestamp;
+
+    // Prevent a huge jump if the browser stalls
+    deltaTime =
+        Math.min(deltaTime, 0.05);
+
+
+  const cycleDuration =  177.6043360433;
+
+
+    // Completely time-based sinusoid
+    //
+    // Math.PI / cycleDuration means:
+    // one half-wave in cycleDuration seconds
+    // one complete sine cycle in 2 * cycleDuration seconds
+
+    phase +=
+        Math.PI *
+        deltaTime  /
+        cycleDuration;
+
+
+    const wave =
+        Math.sin(phase);
+  
+
+    const direction =
+        wave >= 0
+        ? 1
+        : -1;
+
+
+    const speed =
+        Math.abs(wave);
+
+
+const minInterval = 173.441734417344; 
+const maxInterval = 346.883468834688;
+const movementScale = 2775.0677506774;
+
+    const equivalentInterval =
+        maxInterval -
+        speed *
+        (
+            maxInterval -
+            minInterval
+        );
+
+
+    // ==========================================
+    // REAL-TIME MOVEMENT
+    // ==========================================
+
+    // Original calibration was:
+    //
+    // 30 / equivalentInterval per frame
+    //
+    // At 60 FPS this corresponds to:
+    //
+    // (30 / equivalentInterval) * 60
+    // levels per second.
+
+  const movementSpeed =
+    movementScale /
+    equivalentInterval;
+
+const step =
+    movementSpeed * deltaTime;
+
+
+    if(direction > 0){
+
+        moveForward(step);
+
+    }
+    else{
+
+        moveBackward(step);
+
+    }
+
+
+    drawSphere();
+
+
+    requestAnimationFrame(
+        loop
+    );
+}
+// ======================================
+// FULLSCREEN
+// ======================================
+
+function enterFullscreen(){
+
+    if(
+      !document.fullscreenElement
+    ){
+
+        document
+        .documentElement
+        .requestFullscreen()
+        .catch(()=>{});
+    }
+}
+
+document.addEventListener(
+    "click",
+    enterFullscreen,
+    {once:true}
+);
+
+document.addEventListener(
+    "touchstart",
+    enterFullscreen,
+    {once:true}
+);
+
+// ======================================
+// START
+// ======================================
+
+window.addEventListener(
+    "load",
+    ()=>{
+keepScreenAwake();
+
+  //const openedAt = new Date();
+   // document.getElementById("openTime").textContent =
+      // openedAt.toLocaleString();    
+
+
+
+createBottomStartItem();
+drawSphere();
+
+        requestAnimationFrame(
+            loop
+        );
+    }
+);
+      
+let wakeLock = null;
+
+async function keepScreenAwake() {
+    try {
+        wakeLock = await navigator.wakeLock.request("screen");
+
+        wakeLock.addEventListener("release", () => {
+            console.log("Wake Lock released");
+        });
+
+        console.log("Screen Wake Lock active");
+
+    } catch (err) {
+        console.log("Wake Lock error:", err);
+    }
+}
+
+document.addEventListener("visibilitychange", async () => {
+
+    if (
+        wakeLock !== null &&
+        document.visibilityState === "visible"
+    ) {
+        await keepScreenAwake();
+    }
+
+});
+
+</script>
+
+</body>
+</html>      
